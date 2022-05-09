@@ -4,14 +4,8 @@ class Solution {
         String ar[] = s.split("\\s+");
         for(int i=0;i<k;i++)
         {
-            if(i==k-1)
-            {
-                str = str + ar[i];
-            }
-            else
-                str = str + ar[i] + " ";
-            
+            str = str+ ar[i] + " ";
         }
-        return str;
+        return str.trim();
     }
 }

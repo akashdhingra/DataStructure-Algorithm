@@ -1,11 +1,11 @@
 class Solution {
     public String truncateSentence(String s, int k) {
-        String str ="";
-        String ar[] = s.split("\\s+");
-        for(int i=0;i<k;i++)
-        {
-            str = str+ ar[i] + " ";
+        String[] ar = s.split(" ");
+        StringBuilder str = new StringBuilder();
+        
+        for(int i=0;i<k;i++) {
+            str.append(ar[i] + " ");
         }
-        return str.trim();
+        return str.toString().trim();
     }
 }

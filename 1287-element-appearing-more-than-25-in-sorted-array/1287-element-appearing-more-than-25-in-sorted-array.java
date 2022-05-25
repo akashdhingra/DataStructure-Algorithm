@@ -1,25 +1,12 @@
 class Solution {
     public int findSpecialInteger(int[] arr) {
         int c = arr.length/4;
-        int count = 0;
-        int num = 0;
-        if(arr.length == 1)
-            return arr[0];
-        for(int i=0;i<arr.length;i++)
+        int number = 0;
+        for(int i=0;i<arr.length-c;i++)
         {
-            if(count>c)
-                return num;
-            if(arr[i] == num)
-                count++;
-            else
-            {
-                count = 1;
-                num = arr[i];
-            }
-                
+            if(arr[i] == arr[c+i])
+                number = arr[i];
         }
-        return num;
-        
-        
+        return number;
     }
 }

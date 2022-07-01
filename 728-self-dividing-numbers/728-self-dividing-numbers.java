@@ -12,16 +12,12 @@ class Solution {
                     a = a/10;
                 }
                 else
-                {
                     break;
-                }
                 
             }
             
             if(a == 0)
-            {
                 arrlist.add(i);
-            }
         }
         return arrlist;
     }

@@ -6,11 +6,11 @@ class Solution {
             int a = i;
             while(a>0){
                 int last_digit = a%10;
-                if(last_digit> 0 && i % last_digit == 0){
-                    a = a/10;
+                if(last_digit == 0 || i % last_digit != 0){
+                    break;
                 }
                 else
-                    break;
+                    a = a/10;
             }
             if(a == 0)
                 arrlist.add(i);

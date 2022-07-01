@@ -3,16 +3,16 @@ class Solution {
         ArrayList<Integer> arrlist = new ArrayList<Integer>();   
         for(int i=left;i<=right;i++)
         {
-            int a = i;
-            while(a>0){
-                int last_digit = a%10;
+            int num = i;
+            while(num>0){
+                int last_digit = num%10;
                 if(last_digit == 0 || i % last_digit != 0){
                     break;
                 }
                 else
-                    a = a/10;
+                    num = num/10;
             }
-            if(a == 0)
+            if(num == 0)
                 arrlist.add(i);
         }
         return arrlist;

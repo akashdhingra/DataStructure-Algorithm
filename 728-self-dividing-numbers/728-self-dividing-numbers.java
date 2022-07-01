@@ -4,18 +4,14 @@ class Solution {
         for(int i=left;i<=right;i++)
         {
             int a = i;
-            while(a>0)
-            {
+            while(a>0){
                 int last_digit = a%10;
-                if(last_digit> 0 && i % last_digit == 0)
-                {
+                if(last_digit> 0 && i % last_digit == 0){
                     a = a/10;
                 }
                 else
                     break;
-                
             }
-            
             if(a == 0)
                 arrlist.add(i);
         }

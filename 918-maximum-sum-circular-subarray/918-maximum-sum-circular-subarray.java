@@ -30,27 +30,6 @@ class Solution {
         
         int arr_circular_sum = normal_max_sum(nums) + arr_sum;
         
-        return Math.max(max_normal_sum, arr_circular_sum);
-        
-        
-//         for(int j=1;j<n;j++)
-//         {
-//            min_sum = Math.min(min_sum + nums[j], nums[j]);
-//            min_count = Math.min(min_sum,min_count); 
-//         }
-
-//         int initial_sum = 0;
-        
-//         for(int k=0;k<n;k++)
-//         {
-//            initial_sum = initial_sum + nums[k]; 
-//         }
-        
-//         int final_sum = initial_sum - min_count;
-        
-//         int final_result = Math.max(final_sum,max_count);
-        
-//        return final_result;
-        
+        return Math.max(max_normal_sum, arr_circular_sum);       
     }
 }

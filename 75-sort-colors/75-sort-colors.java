@@ -1,5 +1,6 @@
 class Solution {
     public void sortColors(int[] nums) {
+        // This is simple bubble sort
         int n = nums.length;
         int temp = 0;
         for(int i=0;i<n-1;i++)

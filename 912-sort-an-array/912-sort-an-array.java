@@ -1,5 +1,8 @@
 class Solution {
-    
+    // The below solution is of merge sort
+    // Quick sort will not work as for the worst case
+    // quick sort has O(n^2) complexity
+    // where merge sort has O(nlogn) at worstCase
     public void merge(int []arr, int low, int mid, int high)
     {
         int n1 = mid-low+1;

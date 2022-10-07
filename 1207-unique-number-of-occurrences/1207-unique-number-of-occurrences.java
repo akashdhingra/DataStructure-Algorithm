@@ -13,7 +13,7 @@ class Solution {
         // size of hashmap
         // return will be true if hashset is equal to hashmap size.
         // otherwise false.
-        HashSet<Integer> hs = new HashSet<>(hmap.values());
-        return hs.size() == hmap.size();
+        HashSet<Integer> hset = new HashSet<>(hmap.values());
+        return hset.size() == hmap.size();
     }
 }

@@ -1,5 +1,6 @@
 class Solution {
     public int sumOfUnique(int[] nums) {
+        // Solution is done using hashmap
         HashMap<Integer,Integer> hmap = new HashMap<>();
         for(int i:nums)
         {

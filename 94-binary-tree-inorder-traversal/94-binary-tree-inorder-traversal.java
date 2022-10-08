@@ -20,7 +20,7 @@ class Solution {
         return res;
     }
     
-    private void inorder(List<Integer> res, TreeNode root){
+    public void inorder(List<Integer> res, TreeNode root){
         if(root == null) return;
         inorder(res, root.left);
         res.add(root.val);

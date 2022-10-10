@@ -13,6 +13,11 @@
  *     }
  * }
  */
+
+// Below solution is a naive Approach
+// Approach is that, first find the height of tree
+// After that print the value of a tree from node to height
+// i.e starting from 0 to height [same as print the value from node to height k]
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         int h = height(root);

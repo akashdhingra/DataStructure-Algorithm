@@ -13,6 +13,7 @@
  *     }
  * }
  */
+// Solution 1 --> When using inorder in separate function
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
@@ -27,3 +28,21 @@ class Solution {
         inorder(res, root.right);
     }
 }
+
+
+// Below solution does not works because after every recursion call
+// new res is created and the result of recursion call is not stored any where
+// class Solution {
+//     public List<Integer> inorderTraversal(TreeNode root) {
+//         List<Integer> res = new ArrayList<>();
+//         if(root == null) return res;
+//         inorderTraversal(root.left);
+//         res.add(root.val);
+//         inorderTraversal(root.right);
+        
+//         return res;
+//     }
+    
+// }
+
+

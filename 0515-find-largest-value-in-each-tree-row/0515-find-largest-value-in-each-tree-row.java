@@ -13,6 +13,10 @@
  *     }
  * }
  */
+
+// Doing level order
+// And adding the maximum value of each level in a list
+//. Then return the list
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> ls = new ArrayList<>();

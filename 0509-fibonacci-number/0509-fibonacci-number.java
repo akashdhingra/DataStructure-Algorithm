@@ -1,3 +1,7 @@
+// Method 3 - Dynamic Programming method 
+// knows as Memoization
+// Where we save the calculate value
+// so that there is no need to calculate the same value again and again.
 class Solution {
     public int fib(int n) {
         int memo[] = new int[n+1];

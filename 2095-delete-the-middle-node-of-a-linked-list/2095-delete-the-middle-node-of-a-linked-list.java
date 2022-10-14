@@ -17,14 +17,11 @@ class Solution {
             return null;
         }
         
-        int n = count(head);
-        int iterator = 0;
         ListNode head_copied = head;
-        int mid = n/2;
-        while(iterator < mid - 1)
+        int mid = count(head)/2;
+        while(mid-- > 1)
         {
             head = head.next;
-            iterator++;
         }
         
         head.next = head.next.next;

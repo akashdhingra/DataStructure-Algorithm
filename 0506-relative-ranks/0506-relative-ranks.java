@@ -11,8 +11,10 @@ class Solution {
         while(!pq.isEmpty())
         {
             int x = pq.poll();
+            
             if(i>3)
                 res[x] = Integer.toString(i);
+            
             else if(i==1)
             {
                 res[x] = "Gold Medal";
@@ -25,7 +27,9 @@ class Solution {
             {
                 res[x] = "Bronze Medal";
             }
+            
             i++;
+                
         }
         
         return res;

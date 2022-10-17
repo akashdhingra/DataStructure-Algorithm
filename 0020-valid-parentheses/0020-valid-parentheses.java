@@ -1,4 +1,6 @@
 class Solution {
+    // With the help of stack, the correctness of the paranthesis
+    // can be checked
     public boolean isValid(String s) {
         int n = s.length();
         Stack<Character> st = new Stack<>();

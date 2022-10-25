@@ -13,6 +13,11 @@
  *     }
  * }
  */
+
+// Using the BFS to traverse throught the tree and insert the element in the queue
+// after that pop the element and insert the right and left element into the queue
+// and add the last element after every pop from the queue.
+
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> arr = new ArrayList<>();

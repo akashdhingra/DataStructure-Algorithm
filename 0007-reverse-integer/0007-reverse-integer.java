@@ -1,12 +1,12 @@
 class Solution {
     public int reverse(int x) {
-        long res = 0;
+        long r = 0;
 		while(x != 0){
-			res= res*10 + x%10;
+			r = r*10 + x%10;
 			x /= 10;
 		}
-		if(res >= Integer.MIN_VALUE && res <= Integer.MAX_VALUE)
-			return (int)res;
+		if(r >= Integer.MIN_VALUE && r <= Integer.MAX_VALUE)
+			return (int)r;
 		else
 			return 0;
     }

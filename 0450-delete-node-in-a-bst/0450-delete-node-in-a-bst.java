@@ -35,6 +35,12 @@ class Solution {
         return root;
     }
     
+    // finding the next successor in a tree by using inorder
+    // If we the value of key = root .val, which needs to be removed
+    // then we can either replace the root with nearest small or greater value
+    // and in this we choose to replace it with the greater value
+    // It is an individual choice to do so.
+    
     public TreeNode successor(TreeNode root){
         TreeNode current = root.right;
         while(current.left != null && current != null)

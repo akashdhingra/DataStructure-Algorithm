@@ -7,6 +7,8 @@
  * int guess(int num);
  */
 
+// As in this question, search of a number is required
+// Therefore we can use binary search
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
         return binarySearch(1,n);

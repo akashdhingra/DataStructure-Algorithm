@@ -13,6 +13,10 @@
  *     }
  * }
  */
+
+// Get the height of left and right subtrees using dfs traversal. Return true if the // difference between heights is not more than 1 and left and right subtrees are 
+// balanced, otherwise return false. 
+
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if(root == null)

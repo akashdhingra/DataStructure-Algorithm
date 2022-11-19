@@ -1,3 +1,9 @@
+// Simple BFS is used on the Graph
+// And if any of the vertex is not visited then it means we dont have the key,
+//  so we return false
+// Other if all are true then it means all the rooms has been visited,
+// so we return true
+
 class Solution {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
         boolean visited[] = new boolean[rooms.size()];

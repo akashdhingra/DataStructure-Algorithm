@@ -13,6 +13,11 @@
  *     }
  * }
  */
+
+// Checking if value of left node + right node is equal to root value
+// if the above condition is true then return true
+// otherwise return false
+
 class Solution {
     public boolean checkTree(TreeNode root) {
         if(root == null)

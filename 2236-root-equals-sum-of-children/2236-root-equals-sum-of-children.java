@@ -29,6 +29,7 @@ class Solution {
             sum = sum + root.left.val;
         if(root.right!=null)
             sum = sum + root.right.val;
+        
         return (root.val == sum && checkTree(root.left) && checkTree(root.right));
         
     }

@@ -1,3 +1,5 @@
+// Solution 1 
+// This can be done using hashmap
 class Solution {
     public int singleNumber(int[] nums) {
         HashMap<Integer,Integer> hs = new HashMap<Integer, Integer>();

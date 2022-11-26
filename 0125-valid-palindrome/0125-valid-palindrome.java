@@ -1,3 +1,7 @@
+
+// Solution 1 
+// Converting entered string to normal string by removing non-aplha numeric characters
+// then reversing the list and comparing
 class Solution {
     public boolean isPalindrome(String s) {
         

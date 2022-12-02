@@ -33,7 +33,7 @@ class GFG {
 
 // } Driver Code Ends
 
-
+// Testing
 class Solution {
     // Function to return a list containing the DFS traversal of the graph.
     public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
@@ -43,11 +43,8 @@ class Solution {
         for(int i=0;i<V;i++){
             if(visited[i] == false)
                 dfs(i,adj,visited,ls);
-            
         }
-        
         return ls;
-        
     }
     
     public void dfs(int s, ArrayList<ArrayList<Integer>> adj, boolean[] visited, ArrayList<Integer> ls) {

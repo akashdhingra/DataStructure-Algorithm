@@ -42,7 +42,6 @@ class GfG
             else{
                 System.out.print(arr[i]+" ");
             }
-            //System.out.print(arr[i]+" ");
         }
     }
 }

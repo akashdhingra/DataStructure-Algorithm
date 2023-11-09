@@ -31,11 +31,34 @@ class Reverse
     // str: input string
     public static String reverseWord(String str)
     {
-        // Reverse the string str
-        String s = "";
-        for(int i=str.length()-1;i>=0;i--){
-            s = s + str.charAt(i);
+        if(str==null){
+            return null;
         }
-        return s;
+        // Reverse the string str
+        char[] charArray = str.toCharArray();
+        int left = 0;
+        int right = charArray.length - 1;
+        
+        while(left < right){
+            char temp = charArray[left];
+            charArray[left] = charArray[right];
+            charArray[right] = temp;
+            
+            left++;
+            right--;
+        }
+        
+        return new String(charArray);
     }
+    
+    // Due to concationation of string, it will take O(n^2)
+    // public static String reverseWord(String str)
+    // {
+    //     // Reverse the string str
+    //     String s = "";
+    //     for(int i=str.length()-1;i>=0;i--){
+    //         s = s + str.charAt(i);
+    //     }
+    //     return s;
+    // }
 }

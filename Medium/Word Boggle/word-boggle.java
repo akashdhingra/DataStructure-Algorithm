@@ -74,12 +74,6 @@ class Solution
             }
         }
         
-        // String[] words = new String[ls.size()];
-        // int count=0;
-        // for(String s : ls){
-        //     words[count] = s;
-        //     count++;
-        // }
         return ls.toArray(new String[0]);
         
     }
